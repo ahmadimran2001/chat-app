@@ -1,0 +1,33 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "A real-time chat application developed using MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmadimran2001/chat-app.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmadimran2001/chat-app/issues"
+  },
+  "homepage": "https://github.com/ahmadimran2001/chat-app#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
