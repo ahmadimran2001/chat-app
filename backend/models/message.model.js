@@ -4,7 +4,7 @@ const messageSchema = new mongoose.Schema(
   {
     senderId: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "user",
+      ref: "User",
       required: true,
     },
 
@@ -24,5 +24,5 @@ const messageSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const Message = monoose.model("Message", messageSchema);
+const Message = mongoose.model("Message", messageSchema);
 export default Message;

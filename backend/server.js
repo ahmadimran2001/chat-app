@@ -2,6 +2,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import connectToMongoDB from "./db/conectToMongoDB.js";
+import cookieParser from "cookie-parser";
 //using routes
 import authRoutes from "./routes/auth.routes.js";
 import messageRoutes from "./routes/message.routes.js";
@@ -13,6 +14,7 @@ dotenv.config();
 
 //middleware for routes
 app.use(express.json());
+app.use(cookieParser());
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 // app.use(express.json("")); //to parse the incomming requests with json payload from req.body
