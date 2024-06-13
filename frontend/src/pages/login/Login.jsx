@@ -10,7 +10,35 @@ const Login = () => {
         </h1>
 
         <form>
-          <div></div>
+          <div>
+            <label className="label p2">
+              <span className="text-base label-text">Username</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              className="w-full input inputbordered h-10"
+            />
+          </div>
+          <div>
+            <label className="label p2">
+              <span className="text-base label-text">Password</span>
+            </label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              className="w-full input inputbordered h-10"
+            />
+          </div>
+          <a
+            href="#"
+            className="text-sm text-center hover:underline hover:text-blue-600 mt-2 inline-block"
+          >
+            {"Don't"} have an account?
+          </a>
+          <div>
+            <button className="btn btn-block btn-sm mt-2">Login</button>
+          </div>
         </form>
       </div>
     </div>
